@@ -1,1 +1,1 @@
-# OnlineShops.API
+# OnlineShops.CLI
