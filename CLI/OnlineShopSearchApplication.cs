@@ -24,17 +24,6 @@ namespace CLI
             _onlineShopSearchService = onlineShopSearchService;
         }
 
-        // public async Task RunAsync(string[] args)
-        // {
-        //     await Parser.Default
-        //         .ParseArguments<OnlineShopSearchApplicationOption>(args)
-        //         .WithParsedAsync(option=>
-        //         {
-        //             _consoleWriter.WriteLine($"The out code was {option.Outcode}");
-        //             return Task.CompletedTask;
-        //         });
-        // }
-        
         
         // Where we get argument from the command line and to through actual obligation flow.
         public async Task RunAsync(string[] args)
@@ -45,12 +34,7 @@ namespace CLI
                 {
                     var searchRequest = new OnlineShopSearchRequest(option.Outcode);
                     var result = await _onlineShopSearchService.SearchByCodeAsync(searchRequest);
-                    // var formattedTextResult = JsonSerializer.Serialize(result, new JsonSerializerOptions
-                    // {
-                    //     WriteIndented = true
-                    // });
-                    // _consoleWriter.WriteLine(formattedTextResult);
-
+                 
                     HandleSearchResult(result);
                 });
         }

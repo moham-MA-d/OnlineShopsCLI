@@ -5,7 +5,7 @@ namespace CLI.Responses
 {
         public record OnlineShopSearchResponse
         {
-            [JsonPropertyName("products")] // to make sure everything serialize and deserialize properly
+            [JsonPropertyName("products")] 
             public IReadOnlyList<OnlineShopResponse> Products {get; init;}
         }
 }

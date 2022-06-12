@@ -13,38 +13,6 @@ namespace CLI
 {
     public  class Program
     {
-        // static async Task Main(string[]args)
-        // {
-        //     var configuration=new ConfigurationBuilder()
-        //         .AddJsonFile("appsettings.json")
-        //         .Build();
-        //     
-        //     //Initialize DI container
-        //     var services=new ServiceCollection();
-        //     //
-        //     services.AddRefitClient<IOnlineShopApi>()
-        //         .ConfigureHttpClient(httpClient=>
-        //         {
-        //             httpClient.BaseAddress=new Uri(configuration["OnlineShopApi:BaseAddress"]);
-        //         });
-        //     
-        //     var serviceProvider=services.BuildServiceProvider();
-        //     // //Get the refit client out of the service provider
-        //     // //we can make sure that we can call the API and get the response 
-        //     // var client=serviceProvider.GetRequiredService<IOnlineShopApi>();
-        //     // var response=await client.SearchByPostcodeAsync("E2");
-        //     // var responseText = JsonSerializer.Serialize(response, new JsonSerializerOptions
-        //     // {
-        //     //     // to format the response in a nice way
-        //     //     WriteIndented = true
-        //     // });
-        //     // Console.WriteLine(responseText);
-        //     //
-        //     var app=serviceProvider.GetRequiredService<OnlineShopSearchApplication>();
-        //     await app.RunAsync(args);
-        // }
-
-
         static async Task Main(string[] args)
         {
             var configuration = BuildConfiguration();
