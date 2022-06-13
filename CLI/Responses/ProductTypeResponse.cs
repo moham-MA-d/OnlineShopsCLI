@@ -1,10 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CLI.Responses
+namespace CLI.Responses;
+
+public record ProductTypeResponse
 {
-    public record ProductTypeResponse
-    {
-        [JsonPropertyName("name")]
-        public string Name{get;set;}
-    }
+    [JsonPropertyName("name")]
+    public string Name { get; set; }
 }

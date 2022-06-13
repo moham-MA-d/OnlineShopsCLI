@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 
-namespace CLI.Models
-{
-    public class OnlineShopSearchError
-    {
-        public OnlineShopSearchError(IReadOnlyList<string> errorMessages)
-        {
-            ErrorMessages = errorMessages;
-        }
+namespace CLI.Models;
 
-        public IReadOnlyList<string> ErrorMessages { get; init; }
+public class OnlineShopSearchError
+{
+    public OnlineShopSearchError(IReadOnlyList<string> errorMessages)
+    {
+        ErrorMessages = errorMessages;
     }
+
+    public IReadOnlyList<string> ErrorMessages { get; init; }
 }

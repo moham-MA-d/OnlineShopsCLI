@@ -1,12 +1,3 @@
-﻿namespace CLI.Models
-{
-    public record OnlineShopSearchRequest
-    {
-        public OnlineShopSearchRequest(string outcode)
-        {
-            Outcode = outcode;
-        }
+﻿namespace CLI.Models;
 
-        public string Outcode {get;}
-    }
-}
+public record OnlineShopSearchRequest(string Outcode);

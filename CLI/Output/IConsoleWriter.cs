@@ -1,7 +1,6 @@
-﻿namespace CLI.Output
+﻿namespace CLI.Output;
+
+public interface IConsoleWriter
 {
-    public interface IConsoleWriter
-    {
-        void WriteLine(string text);
-    }
+    void WriteLine(string text);
 }

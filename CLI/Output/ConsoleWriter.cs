@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace CLI.Output
+namespace CLI.Output;
+
+public class ConsoleWriter : IConsoleWriter
 {
-    public class ConsoleWriter : IConsoleWriter
+    public void WriteLine(string text)
     {
-        public void WriteLine(string text)
-        {
-            Console.WriteLine(text);
-        }
+        Console.WriteLine(text);
     }
 }

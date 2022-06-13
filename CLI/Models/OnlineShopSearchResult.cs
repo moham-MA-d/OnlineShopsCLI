@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace CLI.Models
+namespace CLI.Models;
+
+public record OnlineShopSearchResult
 {
-    public record OnlineShopSearchResult
-    {
-        public IReadOnlyList<OnlineShopResult> OnlineShops {get;init;}
-    }
+    public IReadOnlyList<OnlineShopResult> OnlineShops {get;init;}
 }
