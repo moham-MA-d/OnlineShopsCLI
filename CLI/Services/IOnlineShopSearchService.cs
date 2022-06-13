@@ -2,10 +2,9 @@
 using CLI.Models;
 using OneOf;
 
-namespace CLI.Services
+namespace CLI.Services;
+
+public interface IOnlineShopSearchService
 {
-    public interface IOnlineShopSearchService
-    {
-        Task<OneOf<OnlineShopSearchResult, OnlineShopSearchError>> SearchByCodeAsync(OnlineShopSearchRequest request);
-    }
+    Task<OneOf<OnlineShopSearchResult, OnlineShopSearchError>> SearchByCodeAsync(OnlineShopSearchRequest request);
 }

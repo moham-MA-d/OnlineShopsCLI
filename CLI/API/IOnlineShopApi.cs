@@ -1,10 +1,9 @@
 ﻿using System.Threading.Tasks;
 using CLI.Responses;
 
-namespace CLI
+namespace CLI;
+
+public interface IOnlineShopApi
 {
-    public interface IOnlineShopApi
-    {
-        Task<OnlineShopSearchResponse>SearchByPostcodeAsync(string postcode);
-    }
+    Task<OnlineShopSearchResponse>SearchByPostcodeAsync(string postcode);
 }

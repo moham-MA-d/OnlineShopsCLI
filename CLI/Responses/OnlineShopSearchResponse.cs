@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace CLI.Responses
+namespace CLI.Responses;
+
+public record OnlineShopSearchResponse
 {
-        public record OnlineShopSearchResponse
-        {
-            [JsonPropertyName("products")] 
-            public IReadOnlyList<OnlineShopResponse> Products {get; init;}
-        }
+    [JsonPropertyName("products")] 
+    public IReadOnlyList<OnlineShopResponse> Products { get; init; }
 }

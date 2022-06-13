@@ -1,10 +1,9 @@
 ﻿using CommandLine;
 
-namespace CLI
+namespace CLI;
+
+public abstract class OnlineShopSearchApplicationOption
 {
-    public class OnlineShopSearchApplicationOption
-    {
-        [Option('o', "outcode", Required = true, HelpText = "Provides the outcode to perform the search on.")]
-        public string Outcode { get; init; }
-    }
+    [Option('o', "outcode", Required = true, HelpText = "Provides the outcode to perform the search on.")]
+    public string Outcode { get; init; }
 }
